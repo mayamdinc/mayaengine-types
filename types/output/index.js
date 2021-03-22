@@ -11,6 +11,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 exports.__esModule = true;
 __exportStar(require("./cause"), exports);
+__exportStar(require("./common"), exports);
 __exportStar(require("./context"), exports);
 __exportStar(require("./question"), exports);
 __exportStar(require("./symptom"), exports);
