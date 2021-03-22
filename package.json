@@ -1,0 +1,9 @@
+{
+  "name": "mayaengine-types",
+  "version": "1.0.0",
+  "description": "Type definitions for MayaEngine",
+  "main": "types/index.js",
+  "repository": "https://github.com/mayamdinc/mayaengine-types",
+  "author": "Sunjith Sukumaran <sunjith@mayamd.ai>",
+  "license": "MIT"
+}
