@@ -1,10 +1,10 @@
 export interface ApiParams {
-    requestId: string;
+    requestId: number;
     requestType: string;
-    language: string;
-    layperson: boolean;
-    algorithm: boolean;
-    excludingSex: string;
+    language?: string;
+    layperson?: boolean;
+    algorithm?: boolean;
+    excludingSex?: string;
     appName?: string;
     sessionId?: string;
     apiKey?: string;
