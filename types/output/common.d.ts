@@ -9,7 +9,7 @@ export interface ApiOutput {
     statusMessage?: string[];
     statusCode?: number;
     requestType?: string;
-    requestId?: string;
+    requestId?: number;
     result?: Result[];
     workup?: Workup[];
     inferences?: InferenceOutput[];
