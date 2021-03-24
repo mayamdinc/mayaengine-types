@@ -30,6 +30,7 @@ export interface InferenceOutput {
 export interface Diagnosis extends NamedItem {
     lifeThreatening?: boolean;
     probability?: number;
+    insight?: string[];
 }
 export interface TriageOutput {
     name: string;

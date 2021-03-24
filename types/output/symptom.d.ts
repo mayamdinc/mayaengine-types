@@ -17,22 +17,18 @@ export declare type SymptomDuration = NamedItem;
 export interface SymptomQualifier extends NamedItem {
     durationExclusionIds?: number[];
 }
-export interface SymptomContext extends SymptomContextCore {
+export interface SymptomContext extends NamedItem {
+    rank: number;
+    preserve: number;
     durationIds?: number[];
     durationExclusionIds?: number[];
 }
-interface SymptomContextCore extends NamedItem {
-    rank: number;
-    preserve: number;
-}
-export interface AssociatedSymptom extends AssociatedSymptomCore {
-    associatedSymptomDuration?: number[];
-    symptomExclusions?: number[];
-}
-interface AssociatedSymptomCore {
+export interface AssociatedSymptom {
     id: number;
     rank: number;
     specific: number;
+    associatedSymptomDuration?: number[];
+    symptomExclusions?: number[];
 }
 declare type SymptomExclusion = NamedItem;
 export interface AlgorithmSymptom extends NamedItem {
