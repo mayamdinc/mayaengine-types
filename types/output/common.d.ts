@@ -3,7 +3,7 @@ import { InputSymptom } from "../input";
 import { ApiQuestion } from "./question";
 import { ContextOutput } from "./context";
 import { AlgorithmSymptom, Symptom } from "./symptom";
-declare type Result = Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput;
+declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | AlgorithmSymptom;
 export interface ApiOutput {
     error: boolean;
     statusMessage?: string[];

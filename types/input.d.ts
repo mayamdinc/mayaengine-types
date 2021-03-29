@@ -13,7 +13,6 @@ export interface ApiParams {
     contextOnly?: boolean;
     term?: string;
     ids?: number[];
-    id?: number;
     preop?: boolean;
     symptoms?: InputSymptom[];
     anatomy?: string;
