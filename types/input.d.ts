@@ -1,6 +1,7 @@
 export interface ApiParams {
     requestType: string;
     requestId?: number;
+    partial?: boolean;
     language?: string;
     layperson?: boolean;
     algorithm?: boolean;

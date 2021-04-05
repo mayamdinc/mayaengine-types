@@ -10,13 +10,14 @@ export interface ApiOutput {
     statusCode?: number;
     requestType?: string;
     requestId?: number;
+    partType?: string;
     result?: Result[];
-    workup?: Workup[];
-    inferences?: InferenceOutput[];
     diagnoses?: Diagnosis[];
     triages?: TriageOutput[];
+    inferences?: InferenceOutput[];
     recommendation?: Recommendation;
     contexts?: ContextOutput[];
+    workup?: Workup[];
 }
 export interface Workup {
     id: number;
