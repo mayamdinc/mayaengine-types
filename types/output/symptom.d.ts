@@ -27,6 +27,7 @@ export interface AssociatedSymptom {
     id: number;
     rank: number;
     specific: number;
+    type: number;
     associatedSymptomDuration?: number[];
     symptomExclusions?: number[];
 }

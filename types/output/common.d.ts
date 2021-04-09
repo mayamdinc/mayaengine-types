@@ -3,7 +3,7 @@ import { InputSymptom } from "../input";
 import { ApiQuestion } from "./question";
 import { ContextOutput } from "./context";
 import { AlgorithmSymptom, Symptom } from "./symptom";
-declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | AlgorithmSymptom;
+declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput;
 export interface ApiOutput {
     error: boolean;
     statusMessage?: string[];
@@ -22,6 +22,7 @@ export interface ApiOutput {
 export interface Workup {
     id: number;
     rank: number;
+    category: string;
 }
 export interface InferenceOutput {
     name: string;
@@ -29,6 +30,8 @@ export interface InferenceOutput {
     reference: string;
 }
 export interface Diagnosis extends NamedItem {
+    commonFactor: number;
+    symptomCount: number;
     lifeThreatening?: boolean;
     probability?: number;
     insight?: string[];
