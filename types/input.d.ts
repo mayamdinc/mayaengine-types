@@ -10,7 +10,6 @@ export interface ApiParams {
     sessionId?: string;
     apiKey?: string;
     apiSecret?: string;
-    diagnostic?: boolean;
     contextOnly?: boolean;
     term?: string;
     ids?: number[];

@@ -17,6 +17,7 @@ export declare type PhysicalExamination = NamedItem;
 export interface ApiAnswerOption extends NamedItem {
     sortOrder: number;
     exclusive?: boolean;
+    red?: boolean;
     symptomId?: number;
     noteTitle?: string;
     symptom?: string;
