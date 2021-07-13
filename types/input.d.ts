@@ -49,8 +49,7 @@ export interface ApiInputAnswer {
 export interface ApiInputFreeTextAnswers {
     [questionId: string]: string;
 }
-interface PatientProfile {
+export interface PatientProfile {
     age: number;
     sex: string;
 }
-export {};
