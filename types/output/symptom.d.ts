@@ -4,7 +4,7 @@ export interface ApiSymptomOutput extends ApiOutput {
     result?: Symptom[];
 }
 export interface Symptom extends NamedItem {
-    hasMultipleSymptomReplacement: boolean;
+    hasMultipleSymptomReplacement?: boolean;
     category?: string;
     durations?: SymptomDuration[];
     qualifiers?: SymptomQualifier[];

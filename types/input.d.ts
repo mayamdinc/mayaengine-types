@@ -20,6 +20,7 @@ export interface ApiParams {
     profile?: PatientProfile;
     input?: ApiInput;
     debugAlgo?: string;
+    nameOnly?: boolean;
 }
 export interface ApiInput {
     age?: number;
