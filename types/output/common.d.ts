@@ -39,6 +39,7 @@ export interface Diagnosis extends NamedItem {
 export interface TriageOutput {
     name: string;
     searchTerm?: string;
+    type?: string;
 }
 export interface Recommendation {
     lab: Lab[];
