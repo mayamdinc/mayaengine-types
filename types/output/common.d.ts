@@ -21,7 +21,6 @@ export interface ApiOutput {
 }
 export interface Workup {
     id: number;
-    rank: number;
     category: string;
 }
 export interface InferenceOutput {
