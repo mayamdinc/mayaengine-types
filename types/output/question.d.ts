@@ -8,7 +8,7 @@ export interface ApiQuestion extends NamedItem {
     answers: ApiAnswerOption[];
     category?: string;
     exclusive?: boolean;
-    freeText?: boolean;
+    freeText?: string;
     recommendedLabs?: Lab[];
     recommendedPhysicalExaminations?: PhysicalExamination[];
 }
