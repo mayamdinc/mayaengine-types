@@ -21,6 +21,8 @@ export interface ApiParams {
     input?: ApiInput;
     debugAlgo?: string;
     nameOnly?: boolean;
+    userIp?: string;
+    userInteractionId?: string;
 }
 export interface ApiInput {
     age?: number;
