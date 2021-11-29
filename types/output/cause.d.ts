@@ -4,6 +4,7 @@ export interface ApiCauseOutput extends ApiOutput {
     result?: CauseOutput[];
 }
 export interface CauseOutput extends NamedItem {
+    lifeThreatening: number;
     symptoms?: CauseSymptomOutput[];
 }
 interface CauseSymptomOutput extends NamedItem {
