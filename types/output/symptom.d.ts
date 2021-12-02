@@ -17,6 +17,7 @@ export interface Symptom extends NamedItem {
 export declare type SymptomDuration = NamedItem;
 export interface SymptomQualifier extends NamedItem {
     durationExclusionIds?: number[];
+    exclusive?: boolean;
 }
 export interface SymptomContext extends NamedItem {
     rank: number;
