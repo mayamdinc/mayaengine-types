@@ -23,6 +23,7 @@ export interface ApiParams {
     nameOnly?: boolean;
     userIp?: string;
     userInteractionId?: string;
+    withId?: boolean;
 }
 export interface ApiInput {
     age?: number;
