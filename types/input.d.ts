@@ -30,6 +30,7 @@ export interface ApiInput {
     sex?: string;
     countryName?: string;
     symptoms?: InputSymptom[];
+    negativeAssociatedSymptoms?: number[];
     pastMedicalHistory?: number[];
     negativePastMedicalHistory?: number[];
     contexts?: number[];
