@@ -65,6 +65,8 @@ export interface GetNamesInput {
     contexts?: number[];
     questions?: number[];
     answers?: number[];
+    physicalExaminations?: number[];
+    labs?: number[];
     triages?: number[];
     inferences?: number[];
 }
