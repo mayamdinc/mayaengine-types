@@ -38,8 +38,7 @@ export interface GetNamesOutput {
 export interface IdNameMap {
     [id: number]: string;
 }
-export interface InferenceOutput {
-    name: string;
+export interface InferenceOutput extends NamedItem {
     link: string;
     reference: string;
 }
@@ -50,9 +49,7 @@ export interface Diagnosis extends NamedItem {
     probability?: number;
     insight?: string[];
 }
-export interface TriageOutput {
-    name: string;
-    id?: number;
+export interface TriageOutput extends NamedItem {
     searchTerm?: string;
     type?: string;
 }

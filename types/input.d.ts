@@ -23,7 +23,6 @@ export interface ApiParams {
     nameOnly?: boolean;
     userIp?: string;
     userInteractionId?: string;
-    withId?: boolean;
     idsForNames?: GetNamesInput;
 }
 export interface ApiInput {
