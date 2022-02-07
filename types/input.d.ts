@@ -24,6 +24,7 @@ export interface ApiParams {
     userIp?: string;
     userInteractionId?: string;
     withId?: boolean;
+    idsForNames?: GetNamesInput;
 }
 export interface ApiInput {
     age?: number;
@@ -55,4 +56,15 @@ export interface ApiInputFreeTextAnswers {
 export interface PatientProfile {
     age: number;
     sex: string;
+}
+export interface GetNamesInput {
+    symptoms?: number[];
+    durations?: number[];
+    qualifiers?: number[];
+    causes?: number[];
+    contexts?: number[];
+    questions?: number[];
+    answers?: number[];
+    triages?: number[];
+    inferences?: number[];
 }

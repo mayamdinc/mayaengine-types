@@ -18,10 +18,25 @@ export interface ApiOutput {
     recommendation?: Recommendation;
     contexts?: ContextOutput[];
     workup?: Workup[];
+    names?: GetNamesOutput;
 }
 export interface Workup {
     id: number;
     category: string;
+}
+export interface GetNamesOutput {
+    symptoms?: IdNameMap;
+    durations?: IdNameMap;
+    qualifiers?: IdNameMap;
+    causes?: IdNameMap;
+    contexts?: IdNameMap;
+    questions?: IdNameMap;
+    answers?: IdNameMap;
+    triages?: IdNameMap;
+    inferences?: IdNameMap;
+}
+export interface IdNameMap {
+    [id: number]: string;
 }
 export interface InferenceOutput {
     name: string;
