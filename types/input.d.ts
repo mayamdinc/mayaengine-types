@@ -31,6 +31,7 @@ export interface ApiInput {
     countryName?: string;
     symptoms?: InputSymptom[];
     pastMedicalHistory?: number[];
+    negativePastMedicalHistory?: number[];
     contexts?: number[];
     negativeContexts?: number[];
     questionAnswers?: ApiInputQuestionAnswers;
