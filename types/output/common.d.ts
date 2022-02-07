@@ -32,6 +32,8 @@ export interface GetNamesOutput {
     contexts?: IdNameMap;
     questions?: IdNameMap;
     answers?: IdNameMap;
+    physicalExaminations?: IdNameMap;
+    labs?: IdNameMap;
     triages?: IdNameMap;
     inferences?: IdNameMap;
 }
