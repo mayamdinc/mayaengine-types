@@ -15,3 +15,5 @@ __exportStar(require("./common"), exports);
 __exportStar(require("./context"), exports);
 __exportStar(require("./question"), exports);
 __exportStar(require("./symptom"), exports);
+__exportStar(require("./lab"), exports);
+__exportStar(require("./physical-examination"), exports);
