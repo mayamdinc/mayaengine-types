@@ -36,6 +36,7 @@ export interface GetNamesOutput {
     labs?: IdNameMap;
     triages?: IdNameMap;
     inferences?: IdNameMap;
+    answerFlags?: IdNameMap;
 }
 export interface IdNameMap {
     [id: number]: string;
