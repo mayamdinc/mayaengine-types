@@ -2,8 +2,8 @@ import { NamedItem } from "../common";
 import { InputSymptom } from "../input";
 import { ApiQuestion } from "./question";
 import { ContextOutput } from "./context";
-import { AlgorithmSymptom, Symptom } from "./symptom";
-declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput;
+import { AlgorithmSymptom, Symptom, SymptomCategory } from "./symptom";
+declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | SymptomCategory;
 export interface ApiOutput {
     error: boolean;
     statusMessage?: string[];

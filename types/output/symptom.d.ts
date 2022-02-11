@@ -37,4 +37,5 @@ declare type SymptomExclusion = NamedItem;
 export interface AlgorithmSymptom extends NamedItem {
     alias?: string;
 }
+export declare type SymptomCategory = string;
 export {};
