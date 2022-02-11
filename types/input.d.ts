@@ -25,6 +25,7 @@ export interface ApiParams {
     userInteractionId?: string;
     idsForNames?: GetNamesInput;
     all?: boolean;
+    max?: number;
 }
 export interface ApiInput {
     age?: number;
