@@ -2,8 +2,8 @@ import { NamedItem } from "../common";
 import { InputSymptom } from "../input";
 import { ApiQuestion } from "./question";
 import { ContextOutput } from "./context";
-import { AlgorithmSymptom, Symptom, SymptomCategory } from "./symptom";
-declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | SymptomCategory;
+import { AlgorithmSymptom, Symptom } from "./symptom";
+declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | string;
 export interface ApiOutput {
     error: boolean;
     statusMessage?: string[];
@@ -19,6 +19,7 @@ export interface ApiOutput {
     contexts?: ContextOutput[];
     workup?: Workup[];
     names?: GetNamesOutput;
+    interactionId?: string;
 }
 export interface Workup {
     id: number;
@@ -37,6 +38,7 @@ export interface GetNamesOutput {
     triages?: IdNameMap;
     inferences?: IdNameMap;
     answerFlags?: IdNameMap;
+    answerNoteTitles?: IdNameMap;
 }
 export interface IdNameMap {
     [id: number]: string;
