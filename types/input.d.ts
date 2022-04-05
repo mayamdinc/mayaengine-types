@@ -31,6 +31,7 @@ export interface ApiParams {
 export interface ApiInput {
     age?: number;
     sex?: string;
+    bmi?: number;
     countryName?: string;
     symptoms?: InputSymptom[];
     negativeAssociatedSymptoms?: number[];
@@ -60,6 +61,7 @@ export interface ApiInputFreeTextAnswers {
 export interface PatientProfile {
     age: number;
     sex: string;
+    bmi: number;
 }
 export interface GetNamesInput {
     symptoms?: number[];
