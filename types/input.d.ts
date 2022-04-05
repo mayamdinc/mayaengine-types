@@ -59,9 +59,9 @@ export interface ApiInputFreeTextAnswers {
     [questionId: string]: string;
 }
 export interface PatientProfile {
-    age: number;
-    sex: string;
-    bmi: number;
+    age?: number;
+    sex?: string;
+    bmi?: number;
 }
 export interface GetNamesInput {
     symptoms?: number[];
