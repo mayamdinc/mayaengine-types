@@ -1,4 +1,4 @@
-import { NamedItem } from "../common";
+import { NamedItem, Insight } from "../common";
 import { InputSymptom } from "../input";
 import { ApiQuestion } from "./question";
 import { ContextOutput } from "./context";
@@ -52,7 +52,7 @@ export interface Diagnosis extends NamedItem {
     symptomCount: number;
     lifeThreatening?: boolean;
     probability?: number;
-    insight?: string[];
+    insight?: Insight[];
 }
 export interface TriageOutput extends NamedItem {
     searchTerm?: string;
