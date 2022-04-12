@@ -37,6 +37,11 @@ export interface GetNamesOutput {
     labs?: IdNameMap;
     triages?: IdNameMap;
     inferences?: IdNameMap;
+    profileFields?: IdNameMap;
+    medications?: IdNameMap;
+    surgeries?: IdNameMap;
+    countries?: IdNameMap;
+    geoLocations?: IdNameMap;
     answerFlags?: IdNameMap;
     answerNoteTitles?: IdNameMap;
 }
