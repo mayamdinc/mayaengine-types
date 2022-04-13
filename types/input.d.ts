@@ -75,9 +75,9 @@ export interface GetNamesInput {
     labs?: number[];
     triages?: number[];
     inferences?: number[];
-    profileFields: number[];
-    medications: number[];
-    surgeries: number[];
-    countries: number[];
-    geoLocations: number[];
+    profileFields?: number[];
+    medications?: number[];
+    surgeries?: number[];
+    countries?: number[];
+    geoLocations?: number[];
 }
