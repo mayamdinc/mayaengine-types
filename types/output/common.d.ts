@@ -57,7 +57,7 @@ export interface Diagnosis extends NamedItem {
     symptomCount: number;
     lifeThreatening?: boolean;
     probability?: number;
-    insight?: Insight[];
+    insights?: Insight[];
 }
 export interface TriageOutput extends NamedItem {
     searchTerm?: string;
