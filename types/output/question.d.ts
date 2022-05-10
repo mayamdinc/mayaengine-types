@@ -9,6 +9,7 @@ export interface ApiQuestion extends NamedItem {
     category?: string;
     exclusive?: boolean;
     freeText?: string;
+    profileFieldId?: number;
     recommendedLabs?: Lab[];
     recommendedPhysicalExaminations?: PhysicalExamination[];
 }
