@@ -44,6 +44,16 @@ export interface ApiInput {
     freeTextAnswers?: ApiInputFreeTextAnswers;
     medications?: number[];
     surgeries?: number[];
+    labs?: LabResult;
+}
+interface LabResult {
+    [labId: number]: LabInput;
+}
+interface LabInput {
+    value: number | string;
+    unit?: number;
+    sampleTimestamp?: number;
+    physiologicalState?: number;
 }
 interface Profile {
     [id: number]: number | string | boolean;
