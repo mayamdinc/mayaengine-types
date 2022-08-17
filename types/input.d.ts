@@ -15,7 +15,6 @@ export interface ApiParams {
     term?: string;
     ids?: number[];
     category?: string[];
-    preop?: boolean;
     symptoms?: InputSymptom[];
     anatomy?: string;
     profile?: PatientProfile;
@@ -30,6 +29,7 @@ export interface ApiParams {
 }
 export interface ApiInput {
     age?: number;
+    dob?: string;
     sex?: string;
     bmi?: number;
     profile?: Profile;

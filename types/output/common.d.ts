@@ -3,6 +3,7 @@ import { InputSymptom } from "../input";
 import { ApiQuestion } from "./question";
 import { ContextOutput } from "./context";
 import { AlgorithmSymptom, Symptom } from "./symptom";
+import { Algorithm } from "./algorithm";
 declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | string;
 export interface ApiOutput {
     error: boolean;
@@ -20,6 +21,13 @@ export interface ApiOutput {
     workup?: Workup[];
     names?: GetNamesOutput;
     interactionId?: string;
+    algorithm?: Algorithm;
+    zscore?: ZscoreOutput;
+}
+export interface ZscoreOutput {
+    bfa?: number;
+    hfa?: number;
+    wfa?: number;
 }
 export interface Workup {
     id: number;
