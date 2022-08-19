@@ -19,7 +19,8 @@ export interface AlgorithmInferenceNode extends Node {
 }
 export interface AlgorithmConditions {
     questionConditions?: AlgorithmQuestionsCondition;
-    profileFieldConditions?: AlgorithmProfileFieldsCondition;
+    profileFieldConditions?: AlgorithmRulesCondition;
+    labConditions?: AlgorithmRulesCondition;
 }
 export interface AlgorithmQuestionsCondition {
     logic: string;
@@ -30,15 +31,15 @@ interface AlgorithmQuestionAnswers {
     logic: string;
     answers: number[];
 }
-export interface AlgorithmProfileFieldsCondition {
+export interface AlgorithmRulesCondition {
     logic: string;
-    profileFieldRules: AlgorithmProfileFieldRule[];
+    rules: AlgorithmRule[];
 }
-export interface AlgorithmProfileFieldRule {
+export interface AlgorithmRule {
     id: number;
-    conditions: AlgorithmProfileCondition[];
+    conditions: AlgorithmRuleCondition[];
 }
-interface AlgorithmProfileCondition {
+interface AlgorithmRuleCondition {
     op: string;
     value: number | string;
 }
