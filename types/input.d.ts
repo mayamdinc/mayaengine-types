@@ -46,7 +46,7 @@ export interface ApiInput {
     surgeries?: number[];
     labs?: LabResult;
 }
-interface LabResult {
+export interface LabResult {
     [labId: number]: LabInput;
 }
 interface LabInput {

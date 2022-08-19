@@ -38,6 +38,7 @@ export interface AlgorithmRulesCondition {
 export interface AlgorithmRule {
     id: number;
     conditions: AlgorithmRuleCondition[];
+    unit?: number;
 }
 interface AlgorithmRuleCondition {
     op: string;
