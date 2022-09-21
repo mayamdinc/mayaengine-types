@@ -62,6 +62,7 @@ export interface InputSymptom {
     id: number;
     duration?: number;
     qualifiers?: number[];
+    painScale?: number;
 }
 export interface ApiInputQuestionAnswers {
     [questionId: string]: ApiInputAnswer;

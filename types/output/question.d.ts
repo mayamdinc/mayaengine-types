@@ -10,6 +10,7 @@ export interface ApiQuestion extends NamedItem {
     exclusive?: boolean;
     freeText?: string;
     profileFieldId?: number;
+    profileFieldType?: string;
     recommendedLabs?: Lab[];
     recommendedPhysicalExaminations?: PhysicalExamination[];
 }
