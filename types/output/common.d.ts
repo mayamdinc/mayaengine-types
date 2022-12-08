@@ -4,7 +4,7 @@ import { ApiQuestion } from "./question";
 import { ContextOutput } from "./context";
 import { AlgorithmSymptom, Symptom } from "./symptom";
 import { Algorithm } from "./algorithm";
-declare type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | string;
+type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | string;
 export interface ApiOutput {
     error: boolean;
     statusMessage?: string[];
@@ -75,6 +75,6 @@ export interface Recommendation {
     lab: Lab[];
     physicalExamination: PhysicalExamination[];
 }
-declare type Lab = NamedItem;
-declare type PhysicalExamination = NamedItem;
+type Lab = NamedItem;
+type PhysicalExamination = NamedItem;
 export {};

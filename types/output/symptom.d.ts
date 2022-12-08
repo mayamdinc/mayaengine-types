@@ -14,7 +14,7 @@ export interface Symptom extends NamedItem {
     symptomExclusions?: SymptomExclusion[];
     pastMedicalHistoryIds?: number[];
 }
-export declare type SymptomDuration = NamedItem;
+export type SymptomDuration = NamedItem;
 export interface SymptomQualifier extends NamedItem {
     durationExclusionIds?: number[];
     exclusive?: boolean;
@@ -33,7 +33,7 @@ export interface AssociatedSymptom {
     associatedSymptomDuration?: number[];
     symptomExclusions?: number[];
 }
-declare type SymptomExclusion = NamedItem;
+type SymptomExclusion = NamedItem;
 export interface AlgorithmSymptom extends NamedItem {
     alias?: string;
 }

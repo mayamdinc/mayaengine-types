@@ -14,8 +14,8 @@ export interface ApiQuestion extends NamedItem {
     recommendedLabs?: Lab[];
     recommendedPhysicalExaminations?: PhysicalExamination[];
 }
-export declare type Lab = NamedItem;
-export declare type PhysicalExamination = NamedItem;
+export type Lab = NamedItem;
+export type PhysicalExamination = NamedItem;
 export interface ApiAnswerOption extends NamedItem {
     sortOrder: number;
     exclusive?: boolean;

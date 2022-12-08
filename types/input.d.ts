@@ -55,7 +55,7 @@ interface LabInput {
     sampleTimestamp?: number;
     physiologicalState?: number;
 }
-interface Profile {
+export interface Profile {
     [id: number]: number | string | boolean;
 }
 export interface InputSymptom {

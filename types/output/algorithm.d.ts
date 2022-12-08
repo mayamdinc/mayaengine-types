@@ -9,7 +9,7 @@ export interface AlgorithmData {
     inferences?: AlgorithmInferenceNode[];
 }
 interface Node {
-    conditions?: AlgorithmConditions;
+    conditions: AlgorithmConditions;
 }
 export interface AlgorithmQuestionNode extends Node {
     questions: AlgorithmQuestion[];
@@ -18,18 +18,23 @@ export interface AlgorithmInferenceNode extends Node {
     inferences: AlgorithmInference[];
 }
 export interface AlgorithmConditions {
+    symptomConditions: AlgorithmSymptomCondition;
     questionConditions?: AlgorithmQuestionsCondition;
     profileFieldConditions?: AlgorithmRulesCondition;
     labConditions?: AlgorithmRulesCondition;
+}
+export interface AlgorithmSymptomCondition {
+    logic: string;
+    symptoms: number[];
 }
 export interface AlgorithmQuestionsCondition {
     logic: string;
     questionRules: AlgorithmQuestionAnswers[];
 }
-interface AlgorithmQuestionAnswers {
+export interface AlgorithmQuestionAnswers {
     id: number;
-    logic: string;
-    answers: number[];
+    logic?: string;
+    answers?: number[];
 }
 export interface AlgorithmRulesCondition {
     logic: string;
@@ -52,7 +57,7 @@ export interface AlgorithmInference {
     id: number;
     sortOrder: number;
 }
-export interface ProfileData {
-    [id: number]: number | string;
+export interface IdBooleanMap {
+    [id: number]: boolean;
 }
 export {};
