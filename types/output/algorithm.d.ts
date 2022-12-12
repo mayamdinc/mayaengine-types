@@ -1,8 +1,14 @@
+import type { Zscore } from "../zscore";
 export interface Algorithm {
     symptoms: number[];
     hash: string;
     date: Date;
     data: AlgorithmData;
+}
+export interface ZscoreTables {
+    hash: string;
+    date: Date;
+    data: Zscore;
 }
 export interface AlgorithmData {
     questions: AlgorithmQuestionNode[];

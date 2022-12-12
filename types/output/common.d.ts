@@ -1,9 +1,9 @@
-import { NamedItem, Insight } from "../common";
-import { InputSymptom } from "../input";
-import { ApiQuestion } from "./question";
-import { ContextOutput } from "./context";
-import { AlgorithmSymptom, Symptom } from "./symptom";
-import { Algorithm } from "./algorithm";
+import { NamedItem, Insight } from "../common.js";
+import { InputSymptom } from "../input.js";
+import { ApiQuestion } from "./question.js";
+import { ContextOutput } from "./context.js";
+import { AlgorithmSymptom, Symptom } from "./symptom.js";
+import { Algorithm, ZscoreTables } from "./algorithm.js";
 type Result = NamedItem | Symptom | ApiQuestion | InputSymptom | AlgorithmSymptom | ContextOutput | string;
 export interface ApiOutput {
     error: boolean;
@@ -22,6 +22,7 @@ export interface ApiOutput {
     names?: GetNamesOutput;
     interactionId?: string;
     algorithm?: Algorithm;
+    zscoreTables?: ZscoreTables;
     zscore?: ZscoreOutput;
 }
 export interface ZscoreOutput {

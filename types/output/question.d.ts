@@ -1,6 +1,6 @@
-import { NamedItem } from "../common";
-import { ApiOutput } from "./common";
-import { SymptomDuration } from "./symptom";
+import { NamedItem } from "../common.js";
+import { ApiOutput } from "./common.js";
+import { SymptomDuration } from "./symptom.js";
 export interface ApiQuestionOutput extends ApiOutput {
     result?: ApiQuestion[];
 }
