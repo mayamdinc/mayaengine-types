@@ -13,6 +13,7 @@ export interface ZscoreTables {
 export interface AlgorithmData {
     questions: AlgorithmQuestionNode[];
     inferences?: AlgorithmInferenceNode[];
+    scoring?: AlgorithmScoringNode[];
 }
 interface Node {
     conditions: AlgorithmConditions;
@@ -22,6 +23,9 @@ export interface AlgorithmQuestionNode extends Node {
 }
 export interface AlgorithmInferenceNode extends Node {
     inferences: AlgorithmInference[];
+}
+export interface AlgorithmScoringNode extends Node {
+    scoring: AlgorithmScoring;
 }
 export interface AlgorithmConditions {
     symptomConditions: AlgorithmSymptomCondition;
@@ -39,8 +43,12 @@ export interface AlgorithmQuestionsCondition {
 }
 export interface AlgorithmQuestionAnswers {
     id: number;
-    logic?: string;
-    answers?: number[];
+    logic: string;
+    answers?: AlgorithmQuestionAnswer[];
+}
+export interface AlgorithmQuestionAnswer {
+    id: number;
+    score?: number;
 }
 export interface AlgorithmRulesCondition {
     logic: string;
@@ -50,6 +58,7 @@ export interface AlgorithmRule {
     id: number;
     conditions: AlgorithmRuleCondition[];
     unit?: number;
+    score?: number;
 }
 interface AlgorithmRuleCondition {
     op: string;
@@ -62,6 +71,14 @@ export interface AlgorithmQuestion {
 export interface AlgorithmInference {
     id: number;
     sortOrder: number;
+}
+export interface AlgorithmScoring {
+    inferences: AlgorithmScoringInference[];
+    exclusive?: boolean;
+}
+export interface AlgorithmScoringInference {
+    id: number;
+    score: number;
 }
 export interface IdBooleanMap {
     [id: number]: boolean;

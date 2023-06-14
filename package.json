@@ -1,6 +1,6 @@
 {
   "name": "mayaengine-types",
-  "version": "2.25.0",
+  "version": "2.28.0",
   "description": "Type definitions for MayaEngine",
   "main": "types/index.js",
   "repository": "https://github.com/mayamdinc/mayaengine-types",

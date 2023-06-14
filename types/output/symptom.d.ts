@@ -22,6 +22,7 @@ export interface SymptomQualifier extends NamedItem {
 export interface SymptomContext extends NamedItem {
     rank: number;
     preserve: number;
+    ivrExclude: number;
     durationIds?: number[];
     durationExclusionIds?: number[];
 }
@@ -30,6 +31,7 @@ export interface AssociatedSymptom {
     rank: number;
     specific: number;
     type: number;
+    ivrExclude: number;
     associatedSymptomDuration?: number[];
     symptomExclusions?: number[];
 }
