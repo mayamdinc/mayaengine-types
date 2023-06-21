@@ -4,6 +4,7 @@ export interface ApiSymptomOutput extends ApiOutput {
     result?: Symptom[];
 }
 export interface Symptom extends NamedItem {
+    er: number;
     specific?: boolean;
     hasMultipleSymptomReplacement?: boolean;
     category?: string;
@@ -22,7 +23,7 @@ export interface SymptomQualifier extends NamedItem {
 export interface SymptomContext extends NamedItem {
     rank: number;
     preserve: number;
-    ivrExclude: number;
+    ivrInclude: number;
     durationIds?: number[];
     durationExclusionIds?: number[];
 }
@@ -31,7 +32,7 @@ export interface AssociatedSymptom {
     rank: number;
     specific: number;
     type: number;
-    ivrExclude: number;
+    ivrInclude: number;
     associatedSymptomDuration?: number[];
     symptomExclusions?: number[];
 }
