@@ -17,6 +17,7 @@ export interface Symptom extends NamedItem {
 }
 export type SymptomDuration = NamedItem;
 export interface SymptomQualifier extends NamedItem {
+    ivrInclude: number;
     durationExclusionIds?: number[];
     exclusive?: boolean;
 }
