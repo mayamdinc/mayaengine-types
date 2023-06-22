@@ -17,14 +17,14 @@ export interface Symptom extends NamedItem {
 }
 export type SymptomDuration = NamedItem;
 export interface SymptomQualifier extends NamedItem {
-    ivrInclude: number;
+    ivr?: number;
     durationExclusionIds?: number[];
     exclusive?: boolean;
 }
 export interface SymptomContext extends NamedItem {
     rank: number;
     preserve: number;
-    ivrInclude: number;
+    ivr?: number;
     durationIds?: number[];
     durationExclusionIds?: number[];
 }
@@ -33,7 +33,7 @@ export interface AssociatedSymptom {
     rank: number;
     specific: number;
     type: number;
-    ivrInclude: number;
+    ivr?: number;
     associatedSymptomDuration?: number[];
     symptomExclusions?: number[];
 }
