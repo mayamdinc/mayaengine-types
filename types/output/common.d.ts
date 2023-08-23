@@ -60,6 +60,7 @@ export interface IdNameMap {
 export interface InferenceOutput extends NamedItem {
     link: string;
     reference: string;
+    parentQuestions?: number[];
 }
 export interface Diagnosis extends NamedItem {
     commonFactor: number;
