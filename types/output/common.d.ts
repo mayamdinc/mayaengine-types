@@ -24,6 +24,7 @@ export interface ApiOutput {
     algorithm?: Algorithm;
     zscoreTables?: ZscoreTables;
     zscore?: ZscoreOutput;
+    score?: number;
 }
 export interface ZscoreOutput {
     bfa?: number;

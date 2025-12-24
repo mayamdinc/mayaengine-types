@@ -71,6 +71,7 @@ export interface AlgorithmQuestion {
 export interface AlgorithmInference {
     id: number;
     sortOrder: number;
+    parentQuestions?: number[];
 }
 export interface AlgorithmScoring {
     inferences: AlgorithmScoringInference[];
